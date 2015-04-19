@@ -1,0 +1,86 @@
+body {
+    background-color: #AAAAAA;
+    font-family: 'PT Mono', sanserif;
+}
+
+div[id=gameView] {
+    position: absolute;
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+    border: 1px solid #000000;
+    cursor: url('assets/images/icons/cursors.png'), default;
+}
+
+div[id="scoreText"] {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 335px;
+    font-size: 25px;
+    color: #fff;
+}
+
+div[id="healthbarBackground"] {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+div[id="healthbarBar"] {
+    display: none;
+    position: absolute;
+    bottom: -232px;
+    left: 220px;
+}
+
+div[id="conversionSlots"] {
+    display: none;
+    width: 400px;
+    height: 128px;
+    bottom: 0;
+    left: 200px;
+    position: absolute;
+    background: url('assets/images/icons/conversion_slots.png') no-repeat;
+}
+
+div[id="header"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+div[id="footer"] {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+span[id="title"] {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+div[id="credits"] {
+    float: left;
+}
+
+div[id="muteButtons"] {
+    float: right;
+}
+
+img[id="mute"],
+img[id="unmute"] {
+    cursor: pointer;
+}
+
+img[id="unmute"] {
+    display: none;
+}
